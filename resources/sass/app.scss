@@ -1,9 +1,29 @@
-@import './sass-utils/variables.scss';
-@import './sass-utils/mixin.scss';
-@import './components/dropdown.scss';
-@import './base/flex.scss';
-@import './base/margin.scss';
-@import './base/padding.scss';
+@import './partials/sass-utils/variables.scss';
+@import './partials/sass-utils/mixin.scss';
+@import './partials/sass-utils/function';
+
+@import './partials/base/flex.scss';
+@import './partials//base/margin.scss';
+@import './partials/base/padding.scss';
+@import './partials/base/reset.scss';
+@import './partials/base/typography';
+
+@import './partials/components/buttons';
+@import './partials/components/dropdown';
+
+@import './partials/layout/footer';
+@import './partials/layout/forms';
+@import './partials/layout/grid';
+@import './partials/layout/header';
+@import './partials/layout/main';
+@import './partials/layout/navigation';
+@import './partials/layout/sidebar';
+
+@import './partials/pages/home';
+
+
+@import './partials/vendors/bootstrap';
+
 
 
 html{
@@ -15,7 +35,6 @@ body {
     margin: 0;
     box-sizing: border-box;
 }
-
 
 
 /* Container */
@@ -140,7 +159,7 @@ body {
     height: 100vh;
 }
 
-/* Width */ 
+/* Width */
 .w_25 {
     width: 25%;
 }
@@ -260,43 +279,43 @@ body {
 
 .fs_00 {
     font-size: 0.3em;
-} 
+}
 
 .fs_0 {
     font-size: 0.6em;
-} 
+}
 
 .fs_1 {
     font-size: 0.8em;
-} 
+}
 
 .fs_2 {
     font-size: 1em;
-} 
+}
 
 .fs_3 {
     font-size: 1.2em;
-} 
+}
 
 .fs_4 {
     font-size: 1.4em;
-} 
+}
 
 .fs_5 {
     font-size: 1.6em;
-} 
+}
 
 .fs_6 {
     font-size: 1.8em;
-} 
+}
 
 .fs_7 {
     font-size: 2em;
-} 
+}
 
 .fs_8 {
     font-size: 2.4em;
-} 
+}
 
 
 /* Text Trasform */
@@ -325,7 +344,7 @@ body {
 }
 
 .text_end {
-    
+
     text-align: right;
 }
 
@@ -344,7 +363,7 @@ body {
     height: 300px;
     perspective: 1000px;
   }
-  
+
   .flip_card_inner {
     position: relative;
     width: 100%;
@@ -354,11 +373,11 @@ body {
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   }
-  
+
   .flip_card:hover .flip_card_inner {
     transform: rotateY(180deg);
   }
-  
+
   .flip_card_front, .flip_card_back {
     position: absolute;
     width: 100%;
@@ -366,18 +385,17 @@ body {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
-  
+
   .flip_card_front {
     background-color: #bbb;
     color: black;
   }
-  
+
   .flip_card_back {
     background-color: black;
     color: white;
     transform: rotateY(180deg);
   }
 
-  
 
-  
+
