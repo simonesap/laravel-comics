@@ -1,1 +1,383 @@
-//
+@import './sass-utils/variables.scss';
+@import './sass-utils/mixin.scss';
+@import './components/dropdown.scss';
+@import './base/flex.scss';
+@import './base/margin.scss';
+@import './base/padding.scss';
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Container */
+
+.container_default {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.container_default_1 {
+    width: 80%;
+    margin: 0 auto;
+}
+.container_default_2 {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+/* Background */
+.bg_custom_blue {
+    background-color: $dark-blue;
+}
+
+.bg_custom_dark_blue {
+    background-color: $dark-blue-dark;
+}
+
+.bg_custom_black {
+    background-color: black;
+}
+
+.bg_jungle_green {
+    background-color: $jungle-green;
+}
+
+.bg_gallery {
+    background-color: $gallery;
+}
+
+.bg_g_gray {
+    background-color: $g-gray;
+}
+
+.bg_black {
+    background-color: black;
+}
+
+.bg_custom_white {
+    background-color: $white;
+}
+
+/* Color */
+.text_white {
+    color: white;
+}
+
+.pewter {
+    color: $pewter;
+}
+
+.text_red {
+    color: red;
+}
+
+.text_gold {
+    color: goldenrod;
+}
+
+.text_jungle {
+    color: $jungle-green;
+}
+
+.text_mulled_wine {
+    color: $mulled-wine;
+}
+
+/* Height */
+.h_25 {
+    height: 25%;
+}
+
+.h_50 {
+    height: 50%;
+}
+
+.h_75 {
+    height: 75%;
+}
+
+.h_100 {
+    height: 100%;
+}
+
+/* Height Vh */
+.h_10_vh {
+    height: 10vh;
+}
+
+.h_20_vh {
+    height: 20vh;
+}
+
+.h_40_vh {
+    height: 40vh;
+}
+
+.h_50_vh {
+    height: 50vh;
+}
+
+.h_90_vh {
+    height: 90vh;
+}
+
+.h_95_vh {
+    height: 95vh;
+}
+
+.h_100_vh {
+    height: 100vh;
+}
+
+/* Width */ 
+.w_25 {
+    width: 25%;
+}
+
+.w_30 {
+    width: 30%;
+}
+
+.w_35 {
+    width: 35%;
+}
+
+.w_50 {
+    width: 50%;
+}
+
+.w_75 {
+    width: 75%;
+}
+
+.w_85 {
+    width: 85%;
+}
+
+.w_100 {
+    width: 100%;
+}
+
+/* Display */
+.d_flex {
+    display: flex;
+}
+
+.d_none {
+    display: none;
+}
+
+.d_block {
+    display: block;
+}
+
+.d_inline {
+    display: inline;
+}
+
+
+/* Position */
+.p_relative {
+    position: relative;
+}
+
+.p_absolute {
+    position: absolute;
+}
+
+.z_index_1 {
+    z-index: 1;
+}
+
+
+
+/* Border */
+.b_rounded_1 {
+    border-radius: 5px;
+}
+
+.b_rounded_2 {
+    border-radius: 10px;
+}
+
+.b_rounded_3 {
+    border-radius: 15px;
+}
+
+.b_rounded_4 {
+    border-radius: 20px;
+}
+
+.b_rounded_5 {
+    border-radius: 25px;
+}
+
+.b_rounded_circle {
+    border-radius: 50%;
+}
+
+.b-1-w {
+    border: 1px solid white;
+}
+
+.b_circle_orange{
+    border: 6px solid $orange_circle;
+    border-radius: 50%;
+    opacity: 2;
+}
+
+.b_none {
+    border: none;
+}
+
+.b_top_left_right {
+    border-top-right-radius: 2%;
+    border-top-left-radius: 2%;
+}
+
+
+/* Shadow */
+.shadowFluid {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* Font */
+.fw_b {
+    font-weight: bold;
+}
+
+.fs_00 {
+    font-size: 0.3em;
+} 
+
+.fs_0 {
+    font-size: 0.6em;
+} 
+
+.fs_1 {
+    font-size: 0.8em;
+} 
+
+.fs_2 {
+    font-size: 1em;
+} 
+
+.fs_3 {
+    font-size: 1.2em;
+} 
+
+.fs_4 {
+    font-size: 1.4em;
+} 
+
+.fs_5 {
+    font-size: 1.6em;
+} 
+
+.fs_6 {
+    font-size: 1.8em;
+} 
+
+.fs_7 {
+    font-size: 2em;
+} 
+
+.fs_8 {
+    font-size: 2.4em;
+} 
+
+
+/* Text Trasform */
+.text_uppercase {
+    text-transform: uppercase;
+}
+
+.text_lowercase {
+    text-transform: lowercase;
+}
+
+.text_capital {
+    text-transform: capitalize;
+}
+
+.text_decoration {
+    text-decoration: none;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.text_start {
+    text-align: start;
+}
+
+.text_end {
+    
+    text-align: right;
+}
+
+.listTypeNone {
+    list-style-type: none;
+}
+
+.vertical_middle {
+    vertical-align: middle;
+}
+
+/* Flip card */
+.flip_card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .flip_card_inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip_card:hover .flip_card_inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip_card_front, .flip_card_back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip_card_front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip_card_back {
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  
+
+  
