@@ -21,19 +21,26 @@
 
 @import './partials/pages/home';
 
-
 @import './partials/vendors/bootstrap';
 
+// @import url('../../public/fonts/DcFandom-orr4.ttf');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&display=swap');
 
+// @font-face {
+//     font-family: DcFandom;
+//     src: url('public/fonts/DcFandom-orr4.ttf');
+//     }
 
 html{
     scroll-behavior: smooth;
 }
 
+
 body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
 }
 
 
@@ -56,6 +63,10 @@ body {
 
 
 /* Background */
+.bg_custom_lightblue {
+    background-color: $azurre;
+}
+
 .bg_custom_blue {
     background-color: $dark-blue;
 }
@@ -93,7 +104,11 @@ body {
     color: white;
 }
 
-.pewter {
+.text_black {
+    color: black;
+}
+
+.text_pewter {
     color: $pewter;
 }
 
@@ -258,6 +273,11 @@ body {
 
 .b_none {
     border: none;
+}
+
+.b_bottom {
+    border-bottom: 2px solid ;
+    border-color: $azurre;
 }
 
 .b_top_left_right {
