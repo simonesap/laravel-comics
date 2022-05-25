@@ -75,6 +75,13 @@
     justify-content: center;
 }
 
+.flexRowWrapEnd {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
 .flexColWrap {
     display: flex;
     flex-direction: column;

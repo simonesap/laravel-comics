@@ -3,3 +3,87 @@
 @import './partials/base/flex.scss';
 @import './partials//base/margin.scss';
 @import './partials/base/padding.scss';
+
+#container {
+    @include flexBetween;
+    @include container;
+    padding: 20px;
+}
+
+#col-1 {
+    padding: 20px;
+}
+
+#col-2 {
+    @include flexRowAlign;
+}
+
+#list {
+    @include reset-list;
+    @include flexRow;
+}
+
+button {
+    background: transparent;
+    border: 2px solid $azurre;
+    padding: 10px;
+    color: $white;
+}
+
+// #app {
+//     @include reset-css;
+//     color: $white;
+// };
+
+// #content {
+//   background: url('../assets/img/footer-bg.jpg');
+//   background-size: cover;
+//   height: 50vh;
+// }
+
+// h3 {
+//   text-transform: uppercase;
+//   padding-bottom: 15px;
+//   margin: 0 auto;
+// }
+
+// #col-1 {
+//   padding: 30px;
+//   width: 50%;
+//   @include flexRow;
+//   div {
+//     align-items: center;
+//     ul {
+//       padding: 10px;
+//       @include reset-list;
+//       @include flexColumn;
+//       li {
+//         width: 150px;
+//         a {
+//           @include textDecorationNone;
+//           color: $white;
+//           font-size: 1em;
+//         }
+//       }
+//     };
+//   };
+// }
+
+// #col-2 {
+//   width: 50%;
+//   height: 50vh;
+//    #image {
+//     margin: 0 auto;
+//     padding: 0;
+//     background: url('../assets/img/dc-logo-bg.png');
+//     background-size: cover;
+//     background-position: center;
+//     height: 100%;
+//     width: 550px;
+//    }
+
+// }
+
+// #shop {
+//   padding-top: 15px;
+// }

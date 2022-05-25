@@ -94,6 +94,13 @@
   justify-content: center;
 }
 
+.flexRowWrapEnd {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+
 .flexColWrap {
   display: flex;
   flex-direction: column;
@@ -291,6 +298,10 @@
 }
 
 /* Padding Bottom */
+.p_b_15 {
+  padding-bottom: 15px;
+}
+
 .p_b_70 {
   padding-bottom: 70px;
 }
@@ -388,7 +399,7 @@
 }
 
 /* Padding left-right */
-.p-x_5 {
+.p_x_5 {
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -584,6 +595,13 @@
   justify-content: center;
 }
 
+.flexRowWrapEnd {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+
 .flexColWrap {
   display: flex;
   flex-direction: column;
@@ -781,6 +799,10 @@
 }
 
 /* Padding Bottom */
+.p_b_15 {
+  padding-bottom: 15px;
+}
+
 .p_b_70 {
   padding-bottom: 70px;
 }
@@ -878,7 +900,7 @@
 }
 
 /* Padding left-right */
-.p-x_5 {
+.p_x_5 {
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -916,6 +938,39 @@
 .p_x_50 {
   padding-left: 50px;
   padding-right: 50px;
+}
+
+#container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#col-1 {
+  padding: 20px;
+}
+
+#col-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+button {
+  background: transparent;
+  border: 2px solid rgb(2, 130, 249);
+  padding: 10px;
+  color: #fefefe;
 }
 
 /* Container */
@@ -1014,6 +1069,13 @@
   justify-content: center;
 }
 
+.flexRowWrapEnd {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+
 .flexColWrap {
   display: flex;
   flex-direction: column;
@@ -1211,6 +1273,10 @@
 }
 
 /* Padding Bottom */
+.p_b_15 {
+  padding-bottom: 15px;
+}
+
 .p_b_70 {
   padding-bottom: 70px;
 }
@@ -1308,7 +1374,7 @@
 }
 
 /* Padding left-right */
-.p-x_5 {
+.p_x_5 {
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -1348,8 +1414,14 @@
   padding-right: 50px;
 }
 
-ul {
-  color: black;
+li:after, li:hover {
+  border-bottom: 4px inset rgb(2, 130, 249);
+}
+
+.jumbo {
+  background-image: url("../../../../public/images/jumbotron.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 /* Colors */
@@ -1448,6 +1520,13 @@ ul {
   justify-content: center;
 }
 
+.flexRowWrapEnd {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+
 .flexColWrap {
   display: flex;
   flex-direction: column;
@@ -1645,6 +1724,10 @@ ul {
 }
 
 /* Padding Bottom */
+.p_b_15 {
+  padding-bottom: 15px;
+}
+
 .p_b_70 {
   padding-bottom: 70px;
 }
@@ -1742,7 +1825,7 @@ ul {
 }
 
 /* Padding left-right */
-.p-x_5 {
+.p_x_5 {
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -1922,6 +2005,10 @@ body {
 }
 
 /* Width */
+.w_15 {
+  width: 15%;
+}
+
 .w_25 {
   width: 25%;
 }

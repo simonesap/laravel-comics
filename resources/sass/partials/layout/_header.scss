@@ -4,8 +4,14 @@
 @import '../base/margin';
 @import '../base/padding';
 
-ul {
-    color: black;
-}
 
+li:after,li:hover {
+    border-bottom: 4px inset $azurre;
+  }
+
+.jumbo {
+    background-image: url('../../../../public/images/jumbotron.jpg');
+    background-position: center;
+    background-size: cover;
+}
 

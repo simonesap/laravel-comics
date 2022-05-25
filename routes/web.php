@@ -18,13 +18,18 @@ Route::get('/', function () {
 
     $comics = config("comics");
 
-    return view('home',
-        [
-            "comicsArr" => $comics
+    // dd($comics);
 
-        ]
-    );
-})->name('home');
+    return view('partials/pages/comic-book/index', compact('comics') );
+})->name('index');
+
+// Route::get('/comic-books', function () {
+
+//     $comics = config("comics");
+
+//     return view('home', ["comicsArr" => $comics]
+//     );
+// })->name('home');
 
 // // // Home route
 // Route::get('/', function () {

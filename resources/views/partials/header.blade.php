@@ -16,7 +16,7 @@
         </a>
         <ul class="reset_list flexRowWrap m_20">
             <li class="m_10">
-                <a class="text_uppercase fs_3 p_5 text_black text_decoration" href=" {{ route( 'characters' ) }} ">characters</a>
+                <a class="text_uppercase p_b_15 fs_3 p_x_5 text_black text_decoration" href=" {{ route( 'characters' ) }} ">characters</a>
             </li>
             <li class="m_10">
                 <a class="text_uppercase fs_3 p_5 text_black text_decoration" href=" {{ route( 'comics' ) }} ">comics</a>
@@ -47,11 +47,18 @@
                 <i></i>
             </li>
         </ul>
-        <div class="m_10 b_bottom flexBetween">
-            <div style="width: 50px"></div>
-            <span class="text_capital">search</span>
-            <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="b_bottom">
+            <form class="flexRowWrapEnd" action="" method="GET">
+                <input class="b_none w_25" type="text" placeholder="">
+                <div class="text_capital">search</div>
+            </form>
+            <i class="fa-regular fa-magnifying-glass"></i>
         </div>
     </nav>
+
+    <div class="h_50_vh w_100" style="background-image: url('{{ asset('images/jumbotron.jpg')}}');background-size: cover;" >
+        {{-- style="background-image: url('{{ asset('images/jumbotron.jpg')}}');" --}}
+        {{-- <img class="w_100 h_50_vh" src="{{ asset('images/jumbotron.jpg')}}" alt=""> --}}
+    </div>
 
 </header>

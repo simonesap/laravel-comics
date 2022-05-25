@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href=" {{ asset('css/app.css') }} ">
     <link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet" />
-    <title>DC Comics </title>
+    <title>@yield('title') </title>
     {{-- @yeld('title') --}}
 </head>
 <body>
@@ -16,10 +16,12 @@
 
     {{-- main --}}
     <main>
-
         @yield('content')
-
     </main>
+
+    <footer>
+        @include('partials.footer')
+    </footer>
 
 </body>
 </html>
