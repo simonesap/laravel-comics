@@ -965,12 +965,72 @@
   display: flex;
   flex-direction: row;
 }
+#list li {
+  margin-left: 8px;
+  margin-right: 8px;
+}
 
 button {
   background: transparent;
   border: 2px solid rgb(2, 130, 249);
   padding: 10px;
   color: #fefefe;
+}
+
+#app {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fefefe;
+}
+
+h3 {
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  margin: 0 auto;
+}
+
+#col-1-2 {
+  padding: 30px;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+#col-1-2 div {
+  align-items: center;
+}
+#col-1-2 div ul {
+  padding: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+#col-1-2 div ul li {
+  width: 150px;
+}
+#col-1-2 div ul li a {
+  text-decoration: none;
+  color: #fefefe;
+  font-size: 1em;
+}
+
+#col-2-2 {
+  width: 50%;
+  height: 50vh;
+}
+#col-2-2 #image {
+  margin: 0 auto;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 550px;
+}
+
+#shop {
+  padding-top: 15px;
 }
 
 /* Container */

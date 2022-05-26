@@ -1,3 +1,4 @@
+
 @php
 
 $dcComics = [
@@ -38,7 +39,7 @@ $shop = [
 ];
 
 $icons = [
-        '../../../public/images/footer-facebook.png',
+        '/public/images/footer-facebook.png',
         '../../../public/images/footer-periscope.png',
         '../../../public/images/footer-pinterest.png',
         '../../../public/images/footer-twitter.png',
@@ -47,19 +48,19 @@ $icons = [
 
 @endphp
 
-<div id="app">
+<div id="app" style="background-image: url('{{ asset('images/footer-bg.jpg')}}');background-size: cover;">
 
      <div id="container">
 
-       <div id="col-1">
+       <div id="col-1-2">
          <div>
 
            <div id="dcComics-shop-container">
              <h3>dc comics</h3>
-             <ul>
+             <ul class="listTypeNone">
                 @forelse ($dcComics as $dc_c)
                     <li>
-                        {{ $dc_c}}
+                        {{$dc_c}}
                     </li>
                 @empty
 
@@ -68,10 +69,10 @@ $icons = [
            </div>
            <div>
              <h3 id="shop">shop</h3>
-             <ul>
+             <ul class="listTypeNone">
                 @forelse ($shop as $sh)
                     <li>
-                        {{ $sh}}
+                        {{$sh}}
                     </li>
                 @empty
 
@@ -83,10 +84,10 @@ $icons = [
 
          <div>
            <h3>dc</h3>
-           <ul>
+           <ul class="listTypeNone">
             @forelse ($dc as $d)
                 <li>
-                    {{ $d}}
+                    {{$d}}
                 </li>
             @empty
 
@@ -96,10 +97,10 @@ $icons = [
 
          <div>
            <h3>sites</h3>
-           <ul>
+           <ul class="listTypeNone">
             @forelse ($sites as $site)
                 <li>
-                    {{ $site}}
+                    {{$site}}
                 </li>
             @empty
 
@@ -109,8 +110,8 @@ $icons = [
 
        </div>
 
-       <div id="col-2">
-         <div id="image"></div>
+       <div id="col-2-2">
+         <div style="background-image: url('{{ asset('images/dc-logo-bg.png')}}');background-size: cover;" id="image"></div>
        </div>
 
      </div>
@@ -135,7 +136,7 @@ $icons = [
             <ul id="list">
                 @forelse ($icons as $icon)
                     <li>
-                        {{ $icon}}
+                        {{$icon}}
                     </li>
                 @empty
 
