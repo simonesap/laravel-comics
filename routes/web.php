@@ -23,6 +23,22 @@ Route::get('/', function () {
     return view('partials/pages/comic-book/index', compact('comics') );
 })->name('index');
 
+Route::get('/index/{id}', function ($id) {
+
+    $comics = config("comics");
+
+    // dd($comics);
+    if( is_numeric( $id ) && $id < count( $comics ) && $id > -1) {
+        // dump($id)
+        $com = $comics[$id];
+    } else {
+        abort(404);
+    }
+
+
+    return view('partials/pages/comic-book/show', compact('com'));
+})->name('show');
+
 // Route::get('/comic-books', function () {
 
 //     $comics = config("comics");

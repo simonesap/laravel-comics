@@ -17,6 +17,8 @@
     {{-- main --}}
     <main>
         @yield('content')
+
+        @yield('comic')
     </main>
 
     <footer>

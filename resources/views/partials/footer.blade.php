@@ -8,7 +8,7 @@ $dcComics = [
             'TV',
             'Games',
             'Videos',
-            'News'
+            'News',
         ];
 
 $dc = [
@@ -22,7 +22,7 @@ $dc = [
     'CPSC Certificates',
     'Ratings',
     'Shop Help',
-    'Contact US'
+    'Contact US',
 ];
 
 $sites = [
@@ -46,7 +46,42 @@ $icons = [
         '../../../public/images/footer-youtube.png',
 ];
 
+// $select = [
+//               [
+//                 'name' => 'DIGITAL COMICS',
+//                 'url' =>'../../../public/images/buy-comics-digital-comics.png',
+//               ],
+//               [
+//                 'name'=> 'DC MERCHANDISE',
+//                 'url'=> '../../../public/images/buy-comics-merchandise.png',
+//               ],
+//               [
+//                 'name'=> 'SUBSCRIPTION',
+//                 'url'=> '../../../public/images/buy-comics-shop-locator.png',
+//               ],
+//               [
+//                 'name'=> 'COMIC SHOP LOCATOR',
+//                 'url'=> '../../../public/images/buy-comics-subscriptions.png',
+//               ],
+//               [
+//                 'name'=> 'DC POWER VISA',
+//                 'url'=> '../../../public/images/buy-dc-power-visa.svg',
+//               ],
+//             ];
+
 @endphp
+
+{{-- <div>
+    <div id="main">
+        <ul>
+            @forelse ($select as $key => $sel)
+            <li>
+                <img src="{{ $key->url}}" alt="">
+                <a href="#"></a>
+            </li>
+        </ul>
+    </div>
+</div> --}}
 
 <div id="app" style="background-image: url('{{ asset('images/footer-bg.jpg')}}');background-size: cover;">
 
@@ -121,7 +156,7 @@ $icons = [
 
 
 
-<div id="container">
+{{-- <div id="container">
 
     <div id="col-1">
         <button>sign-up now!</button>
@@ -146,4 +181,4 @@ $icons = [
         </div>
     </div>
 
-</div>
+</div> --}}
